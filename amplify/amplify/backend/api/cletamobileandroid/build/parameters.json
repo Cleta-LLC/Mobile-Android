@@ -1,0 +1,14 @@
+{
+    "CreateAPIKey": 0,
+    "AppSyncApiName": "cletamobileandroid",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcletamobileandroid2a8c3dc0",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "S3DeploymentBucket": "amplify-cletamobileandroid-dev-134213-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/fbe685de697711f5dc0a5293f61e087a416dbda7"
+}

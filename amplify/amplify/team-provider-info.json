@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cletamobileandroid-dev-134213-authRole",
+      "UnauthRoleArn": "arn:aws:iam::881970424006:role/amplify-cletamobileandroid-dev-134213-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::881970424006:role/amplify-cletamobileandroid-dev-134213-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cletamobileandroid-dev-134213-deployment",
+      "UnauthRoleName": "amplify-cletamobileandroid-dev-134213-unauthRole",
+      "StackName": "amplify-cletamobileandroid-dev-134213",
+      "StackId": "arn:aws:cloudformation:us-east-1:881970424006:stack/amplify-cletamobileandroid-dev-134213/2b3d5530-2eb9-11ec-9f54-12500f8848b9",
+      "AmplifyAppId": "d3w4w52ozei7fq"
+    },
+    "categories": {
+      "auth": {
+        "cletamobileandroid2a8c3dc0": {}
+      }
+    }
+  }
+}

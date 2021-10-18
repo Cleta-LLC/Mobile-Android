@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "cletamobileandroid",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authcletamobileandroid2a8c3dc0",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

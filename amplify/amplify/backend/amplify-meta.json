@@ -1,0 +1,84 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cletamobileandroid-dev-134213-authRole",
+      "UnauthRoleArn": "arn:aws:iam::881970424006:role/amplify-cletamobileandroid-dev-134213-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::881970424006:role/amplify-cletamobileandroid-dev-134213-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cletamobileandroid-dev-134213-deployment",
+      "UnauthRoleName": "amplify-cletamobileandroid-dev-134213-unauthRole",
+      "StackName": "amplify-cletamobileandroid-dev-134213",
+      "StackId": "arn:aws:cloudformation:us-east-1:881970424006:stack/amplify-cletamobileandroid-dev-134213/2b3d5530-2eb9-11ec-9f54-12500f8848b9",
+      "AmplifyAppId": "d3w4w52ozei7fq"
+    }
+  },
+  "auth": {
+    "cletamobileandroid2a8c3dc0": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "loginMechanisms": [
+          "PREFERRED_USERNAME"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cletamobileandroid-dev-134213-deployment/amplify-cfn-templates/auth/cletamobileandroid2a8c3dc0-cloudformation-template.yml",
+        "logicalId": "authcletamobileandroid2a8c3dc0"
+      },
+      "lastPushTimeStamp": "2021-10-17T20:41:03.704Z",
+      "output": {
+        "UserPoolId": "us-east-1_VCz0w1oxa",
+        "AppClientIDWeb": "71e3uhrd99aefp5dr1qpknrg7i",
+        "AppClientID": "247mlqn73f1u02kda7ot9pm7ui",
+        "HostedUIDomain": "cletamobileandroid2a8c3dc0-2a8c3dc0-dev",
+        "IdentityPoolId": "us-east-1:c6722f4b-7985-49aa-917b-6dbd98a92b5e",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:881970424006:userpool/us-east-1_VCz0w1oxa",
+        "IdentityPoolName": "cletamobileandroid2a8c3dc0_identitypool_2a8c3dc0__dev",
+        "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"gettingstarted://\"],\"LogoutURLs\":[\"gettingstarted://\"]}",
+        "UserPoolName": "cletamobileandroid2a8c3dc0_userpool_2a8c3dc0"
+      },
+      "lastPushDirHash": "qmK7e5cuMCu4vOpckSTASAArzvQ="
+    }
+  },
+  "api": {
+    "cletamobileandroid": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authcletamobileandroid2a8c3dc0"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "kf3473xnjrgz5ovhqpybsn3khu",
+        "GraphQLAPIEndpointOutput": "https://lclguvv4xnhwfhl7mxjlhmgibm.appsync-api.us-east-1.amazonaws.com/graphql"
+      },
+      "lastPushTimeStamp": "2021-10-17T20:41:03.713Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cletamobileandroid-dev-134213-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apicletamobileandroid"
+      },
+      "lastPushDirHash": "qtkIguWDAwVu9Fk8xov2IjaEhLo="
+    }
+  }
+}
